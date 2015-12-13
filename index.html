@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<link href="assets/css/example.css" rel="stylesheet" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,300italic' rel='stylesheet' type='text/css'>
+		<meta charset="UTF-8">
+	</head>
+
+	<body style="">
+	
+		<div class="leftcol" style="z-index: 1000; height: 100%; background: #444; width: 220px; position: absolute; top: 0px; left: 0px; padding: 20px;">
+			<span>Spline List</span>
+			<div class="splinelist">
+				<div class="scrollable">
+				
+					<div style="position: absolute; font-size: 14px; padding: 20px; color: #999; z-index: 10;">
+						There are no splines to display.
+					</div>
+					
+				</div>
+			</div>
+			<div style="position: fixed; bottom: 0px; width: 235px; background: #444; padding: 0px 25px 25px 0px; left: 0px; z-index: 1000;">
+				<div id="help1">
+					<p style=" text-align: center; width: 195px; background: #f6f3e3; color: #444; font-weight: 600; padding: 10px; margin: 0px 20px; font-style: italic; border-radius: 5px;">
+						Start drawing a new spline by pressing "create new"!
+					</p>
+					<div class="downarrow"></div>
+				</div>
+				<div class="reset" id="newspline" style="margin-right: 0px; float: right; width: 190px; text-align: center;">Create New</div>
+			</div>
+		</div>
+		
+		<div class="rightcol">
+			<div style="z-index: 1000; position: relative;">
+			
+				<h1>RequireJS Gaussian Weighted <a href="http://en.wikipedia.org/wiki/B-spline" target="_new">B-spline</a> Renderer</h1>
+				<div>
+					Don't know what a b-spline is? Click the link above to see the wikipedia article.
+				</div>
+				
+				<div class="editbuttons" id="editbtns" >
+					<div id="menubtn">
+						<div class="bars"></div>
+					</div>
+					<div class="reset" id="resetbtn" >Clear All</div>
+					<div class="reset" id="undobtn" >Remove Point</div>
+					<div class="reset toggle" id="gridbtn" >Show Grid</div>
+				</div>
+				
+				<div class="designedby">
+					designed by <a href="http://www.moonphasemedia.com/">moonphasemedia</a>
+				</div>
+				
+			</div>
+		</div>
+		
+		<canvas id="canv" width="2600px" height="2600px"></canvas>
+		
+		<script data-main="assets/js/main" src="assets/js/lib/require.js"></script>
+		
+	</body>
+	
+</html>
