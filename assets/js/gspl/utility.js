@@ -9,7 +9,7 @@ define( "gspl/utility", [ "gspl/gspl" ] , function( gspl ) {
 		sum: function( arr, n ) 
 		{
 			var sum = 0;
-			if ( n == undefined )
+			if ( typeof n === "undefined" )
 			{
 				n = arr.length-1;
 			}
